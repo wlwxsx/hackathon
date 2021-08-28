@@ -6,23 +6,24 @@
     <link rel="stylesheet" href="popup.css">
 </head>
 <body>
-    
+
     <header>
-        <h1>Saving Tabs(place holder)</h1>
+        <h1>Saving Tabs</h1>
         <p id = "url">an extension to help you stay organized</p>
-        <button id = "saveTabs">save tabs</button>
     </header>
     <main>
-        
-        
-        <ul>
-            <li>workspace 1</li>
-            <li>workspace 2</li>
-            <li>workspace 3</li>
+        <button id = "saveTabs">save current tabs</button>
+        <div id="create-name" class="container">
+            <label for="current window">enter name of current workspace:</label>
+            <input type="text" id="current" name="current">
+            <button id="submit">Submit</button>
+        </div>
+        <ul id = "workspace-list">
+          
         </ul>
-        
+
     </main>
     
-    <script src="background.js"></script>
+    <script src="popup.js"></script>
 </body>
 </html>
