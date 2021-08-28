@@ -8,13 +8,11 @@ body{
   background-color: #999;
   height: 250px;
   width: 500px;
+  text-align: center;
 }
 
 header{
   display: block;
-  top: 0;
-  left: 0;
-  width: 100%;
   background-color: rgb(0, 217, 255);
   padding: 10px
 }
@@ -22,12 +20,12 @@ header{
 
 
 button {
-    height: 30px;
-    width: 50px;
+    display: inline-block;
+    cursor: pointer;
     outline: none;
     margin: 10px;
     border: none;
-    border-radius: 2px;
+    border-radius: 5px;
     background-color: pink;
     align-items:center;
   }
@@ -37,6 +35,10 @@ button.current {
                 0 0 0 4px black;
   }
 
+#saveTabs {
+  height: fit-content;
+  padding: 5px;
+}
 
 main{
     display: flex;
@@ -53,6 +55,8 @@ main div{
 ul li a{
   text-decoration: none;
   display: block;
+  border-radius: 5px;
+  padding: 2px;
 }
 
 ul li a:hover{
@@ -60,7 +64,7 @@ ul li a:hover{
 }
 
 ul li ul li{
-  display: none;
+  display: show;
 }
 
 ul li:hover ul li{
