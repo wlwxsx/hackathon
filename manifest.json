@@ -1,6 +1,6 @@
 {
-    "name": "Getting Started Example",
-    "description": "Build an Extension!",
+    "name": "Tabization",
+    "description": "Save your CPU!",
     "version": "1.0",
     "manifest_version": 3,
     "content_scripts": [
@@ -16,5 +16,6 @@
         "service_worker": "background-wrapper.js",
         "type": "module"
     },
-    "permissions": ["tabs", "storage"] 
+    "permissions": ["tabs", "storage"] ,
+    "icons": { "40":"photo2.png" }
   }

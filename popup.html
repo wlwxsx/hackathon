@@ -1,49 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <title>Saves links</title>
     <link rel="stylesheet" href="popup.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kaisei+HarunoUmi&display=swap" rel="stylesheet">
 </head>
-<body>
 
+<body>
     <header>
-        <h1>Saving Tabs</h1>
+        <h1>Tabization</h1>
         <p>an extension to help you stay organized</p>
     </header>
+
     <main>
-        <button id = "saveTabs">save current tabs</button>
-        <div id="create-name" class="container">
-            <label for="current window">enter name of current workspace:</label>
+        <button id="saveTabs">Save All Tabs On This Window</button>
+        <div id="create-name" class="container" style="display:none;">
+            <label for="current window">Enter the Name of Your Current Workspace:</label>
             <input type="text" id="current" name="current">
             <button id="submit">Submit</button>
-            <button id="clearAll">Clear All</button>
         </div>
-        <ul id = "workspace-list">
-          
-        </ul>
+        <ul id="workspace-list">
 
+        </ul>
+        <button id="clearAll">Clear All</button>
     </main>
-    
+
     <script src="background.js"></script>
 </body>
+
 </html>
-
-
-
-<!-- <ul>
-    <li><a href="#">workspace1</a>
-        <ul>
-            <li><a href="#"> link1</a></li>
-            <li><a href="#"> link2</a></li>
-            <li><a href="#"> link3</a></li>
-        </ul>
-    </li>
-    <li><a href="#">workspace2</a>
-        <ul>
-            <li><a href="#"> link1</a></li>
-            <li><a href="#"> link2</a></li>
-            <li><a href="#"> link3</a></li>
-        </ul>
-    </li>
-</ul> -->

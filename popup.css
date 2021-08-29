@@ -4,45 +4,55 @@ html, body{
 }
 
 body{
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Kaisei HarunoUmi', serif;
+  /* font-family: Arial, Helvetica, sans-serif; */
   background-color: #999;
   height: 250px;
   width: 500px;
-  text-align: center;
 }
 
 header{
   display: block;
-  background-color: rgb(0, 217, 255);
-  padding: 10px
+  top: 0;
+  left: 0;
+  width: 96%;
+  background-color: #d8e2dc;
+  padding: 10px;
+  
+}
+
+button {
+  height: 50px;
+  width: 95%;
+  outline: none;
+  margin: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #fec5bb;
+  align-items:center;
+  text-align: center;
+  
+}
+
+#submit{
+  background-color:#ece4db;
+  
 }
 
 
-
-button {
-    cursor: pointer;
-    height: fit-content;
-    width: fit-content;
-    outline: none;
-    margin: 10px;
-    padding: 2px;
-    border: none;
-    border-radius: 5px;
-    background-color: pink;
-    align-items:center;
-    text-align: center;
-  }
   
-button.current {
+button .current {
     box-shadow: 0 0 0 2px white,
                 0 0 0 4px black;
   }
 
 #clearAll {
   white-space:nowrap;
-  min-width: max-content
+  min-width: max-content; 
+  padding: 1px;
+  height: 40px;
+  background-color: #ece4db;
 }
-
 
 main{
     display: block;
@@ -50,6 +60,7 @@ main{
     padding-bottom: 3em;
     min-height:85%;
     background-color:white;
+    
 }
 
 main div{
@@ -75,22 +86,30 @@ main div button{
   align-items:center;
   text-align: center;}
 
+/* main div button #clearAll{
+  width: 80px;
+} */
+ul{
+  list-style-type: none;
+}
+
 ul li a{
   text-decoration: none;
   display: block;
-  border-radius: 5px;
-  padding: 2px;
+  background-color: #f8edeb;
+  
 }
 
 ul li a:hover{
-  background-color: salmon;
+  background-color: #e8e8e4;
 }
 
 ul li ul li{
-  display: show;
+  display: none;
+  background-color: #d8e2dc;
 }
 
 ul li:hover ul li{
   display: block;
+  background-color: #fcd5ce;
 }
-
