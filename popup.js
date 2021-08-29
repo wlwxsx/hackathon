@@ -65,6 +65,7 @@ function addToList(){
     
     document.getElementById('workspace-list').innerHTML += '<ul>' +list+'<ul>';
 
+    //const currentwindow = localStorage.getItem(counter);
     alert("test")
 }
 

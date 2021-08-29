@@ -9,7 +9,7 @@
 
     <header>
         <h1>Saving Tabs</h1>
-        <p id = "url">an extension to help you stay organized</p>
+        <p>an extension to help you stay organized</p>
     </header>
     <main>
         <button id = "saveTabs">save current tabs</button>
@@ -17,6 +17,7 @@
             <label for="current window">enter name of current workspace:</label>
             <input type="text" id="current" name="current">
             <button id="submit">Submit</button>
+            <button id="clearAll">Clear All</button>
         </div>
         <ul id = "workspace-list">
           
@@ -24,6 +25,25 @@
 
     </main>
     
-    <script src="popup.js"></script>
+    <script src="background.js"></script>
 </body>
 </html>
+
+
+
+<!-- <ul>
+    <li><a href="#">workspace1</a>
+        <ul>
+            <li><a href="#"> link1</a></li>
+            <li><a href="#"> link2</a></li>
+            <li><a href="#"> link3</a></li>
+        </ul>
+    </li>
+    <li><a href="#">workspace2</a>
+        <ul>
+            <li><a href="#"> link1</a></li>
+            <li><a href="#"> link2</a></li>
+            <li><a href="#"> link3</a></li>
+        </ul>
+    </li>
+</ul> -->
